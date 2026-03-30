@@ -9,6 +9,7 @@ export default defineConfig(({mode}) => {
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+      'import.meta.env.VITE_GOOGLE_SHEETS_WEBHOOK_URL': JSON.stringify('https://script.google.com/macros/s/AKfycbyJ410UW_3SHnGGo8qtJeiXNXh6klth8BQhp071Z3092zvF6fOFxZrGdqKoZyxgHRGNig/exec'),
     },
     resolve: {
       alias: {
