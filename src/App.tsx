@@ -602,6 +602,7 @@ export default function App() {
         </AnimatePresence>
       </main>
 
+      {(step === "reference" || step === "setup") && (
       <section className="relative z-10 max-w-5xl mx-auto px-6 pt-20 pb-16 mt-8 border-t border-white/5">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter uppercase leading-none mb-4 text-white">Como configurar sua API Key?</h2>
@@ -629,6 +630,7 @@ export default function App() {
           </button>
         </div>
       </section>
+      )}
 
       <footer className="relative z-10 p-8 border-t border-white/5 flex justify-center items-center">
         <p className="text-[10px] uppercase tracking-[0.3em] text-white/20 text-center">© 2026 PersonaRefine AI</p>
